@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Loja Virtual de Roupas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Bem-vindo à Loja Virtual de Roupas! Frete grátis para compras acima de R$ 200!</p>
+        </div>
+        <div class="header-main">
+            <h1>Loja Virtual de Roupas</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Estamos aqui para ajudar! Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+            <button class="btn-voltar" onclick="window.location.href='home.html'">Voltar para Home</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Loja Virtual de Roupas</p>
+    </footer>
+</body>
+</html>

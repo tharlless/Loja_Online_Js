@@ -1,0 +1,374 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #e0e0e0, #b0b0b0); /* Degradê em cinza */
+}
+
+header {
+    background: linear-gradient(to right, #333, #555); /* Degradê no header */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    position: sticky; /* Fixa o header no topo */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+#produtos {
+    
+    grid-template-columns: repeat(5, 1fr); /* 5 produtos por linha */
+    gap: 1rem; /* Espaçamento entre os produtos */
+    border: 1px solid #ccc; /* Borda ao redor da tabela */
+    padding: 1rem;
+    background-color: #f9f9f9;
+    margin: 2rem auto; /* Centraliza horizontalmente */
+    max-width: 1200px; /* Limita a largura máxima */
+}
+
+#produtos h2 {
+    grid-column: span 5; /* Faz o título ocupar toda a largura da grade */
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.produto {
+    border: 1px solid #ddd; /* Borda ao redor de cada produto */
+    padding: 1rem; /* Espaço interno */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar os produtos */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+}
+
+.produto:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.produto h3 {
+    font-size: 1rem; /* Ajusta o tamanho do texto */
+    margin: 0.5rem 0;
+}
+
+.produto p {
+    font-size: 0.9rem; /* Ajusta o tamanho do preço */
+    color: #555;
+}
+
+.produto button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Botão menor */
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-size: 0.8rem; /* Ajusta o tamanho do texto do botão */
+}
+
+.produto button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#destaque {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+#destaque img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.top-bar {
+    background-color: #f8b400;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-main h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8b400; /* Destaque no título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+}
+
+.header-main nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-main nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.header-main nav ul li a:hover {
+    background-color: #f8b400;
+    color: #333;
+    border-color: #f8b400;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+#lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o número de colunas automaticamente */
+    gap: 1rem; /* Espaçamento entre os produtos */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+@media (max-width: 768px) {
+    #lista-produtos {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajusta para telas menores */
+    }
+
+    .produto h3 {
+        font-size: 0.9rem; /* Reduz o tamanho do texto em telas menores */
+    }
+
+    .produto p {
+        font-size: 0.8rem; /* Reduz o tamanho do preço em telas menores */
+    }
+
+    .produto button {
+        font-size: 0.7rem; /* Reduz o tamanho do botão em telas menores */
+    }
+}
+
+#top-vendas {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limita a largura da seção */
+}
+
+#top-vendas h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+#top-vendas p {
+    font-size: 1.2rem;
+    color: #f00;
+    margin-bottom: 1.5rem;
+}
+
+.destaques {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+}
+
+.produto-destaque {
+    text-align: center;
+    max-width: 300px;
+}
+
+.produto-destaque img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.produto-destaque h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.produto-destaque p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#bem-vindo {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limita a largura do banner */
+}
+
+#bem-vindo img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.btn-ver-produtos {
+    background-color: #f8b400; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 0.8rem 1.5rem; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho do texto */
+    font-weight: bold;
+    border-radius: 25px; /* Bordas arredondadas */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: all 0.3s ease; /* Animação suave */
+}
+
+.btn-ver-produtos:hover {
+    background-color: #ffa500; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+#contato {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#contato p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contato label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+#contato input, #contato textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contato input:focus, #contato textarea:focus {
+    border-color: #f8b400;
+    outline: none;
+    box-shadow: 0 0 4px rgba(248, 180, 0, 0.5);
+}
+
+.btn-enviar {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #ffa500;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-voltar {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #555;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
