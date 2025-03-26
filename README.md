@@ -13,8 +13,6 @@ Este repositório contém imagens de um exemplo de site de vendas online. As ima
 ### Entre em contato com a gente.  
 ![Carrinho de Compras](imagens/exemplo3.png)  
 
-### 📦 Checkout  
-![Checkout](caminho/para/checkout.png)  
 
 ## 🔗 Sobre  
 
