@@ -1,33 +1,25 @@
-# Olá, eu sou a Tharlles dos Santos Camargos! 👋
+# 🛒 Exemplo de Site de Vendas Online  
 
-Bem-vindo ao meu perfil do GitHub! Aqui você encontrará informações sobre os projetos em que estou trabalhando e as tecnologias que utilizo.
+Este repositório contém imagens de um exemplo de site de vendas online. As imagens podem ser usadas como referência visual para projetos similares.  
 
-## Sobre Mim
+## 📸 Prévia  
 
-Sou uma desenvolvedora apaixonada por tecnologia e inovação. Adoro aprender novas linguagens de programação e trabalhar em projetos desafiadores.
+### 🖥️ Página Inicial  
+![Homepage](imagens/exemplo1.png)  
 
-## Linguagens e Ferramentas
+### 🛍️ Página de Produtos  
+![Página de Produtos](imagens/exemplo2.png)  
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
-![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
-![HTML](https://img.shields.io/badge/-HTML-black?style=flat-square&logo=html5)
-![CSS](https://img.shields.io/badge/-CSS-black?style=flat-square&logo=css3)
-![Java](https://img.shields.io/badge/-Java-black?style=flat-square&logo=java)
-![Ruby](https://img.shields.io/badge/-Ruby-black?style=flat-square&logo=ruby)
-![MongoDB](https://img.shields.io/badge/-MongoDB-black?style=flat-square&logo=mongodb)
-![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
-![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=github)
+### Entre em contato com a gente.  
+![Carrinho de Compras](imagens/exemplo3.png)  
 
-## Línguas
+### 📦 Checkout  
+![Checkout](caminho/para/checkout.png)  
 
-- Português
-- Inglês
+## 🔗 Sobre  
 
-## Contato
+Essas imagens servem apenas como inspiração para layouts de lojas virtuais e não possuem funcionalidade real.  
 
-- [LinkedIn](https://www.linkedin.com/in/tharlles-dos-santos-camargos-507408279/)
-- [GitHub](https://github.com/tharlless/Profile)
-- tharllestsc@gmail.com
-- telefone:+55(85)998219145
+---
 
-Obrigado por visitar meu perfil!
+_Made by [Tharlles dos Santos Camargos](https://github.com/tharlless)_
